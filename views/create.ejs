@@ -1,0 +1,140 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create transfer </title>
+  <meta name="description" content="transfer of money is currently ongoing">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="/main.css">
+</head>
+<body>
+
+    <header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
+
+        <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3 fs-6" href="/">Paytracker</a>
+        
+        <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <form class="nav col-12 col-md-auto flex-fill mb-2 justify-content-center mb-md-0" role="search" method="POST" action="/search">
+          <input type="search" name="searchTerm" class="form-control form-control-dark w-100 rounded-0 border-0" placeholder="Search..." aria-label="Search">
+        </form>
+      
+      </header>
+
+
+    <div class="container-fluid">
+        <div class="row">
+
+
+<div class="d-flex justify-content-between flex-wrap flex-md nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+    <h1 class="h2">Transfer</h1>
+    <div class="btn-toolbar mb-2 mb-md 0">
+      <div class="btn-group me-2">
+        <button class="btn btn-sm btn-outline-secondary">?</button>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col py-3">
+    <div class="row">
+      <div class="col">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="/">Dashboard</a></li>
+            <li class="breadcrumb-item active">New Transfer</li>
+          </ol>
+        </nav>
+      </div>
+      <div class="col text-end fw-lighter">
+        <b>UserId</b>
+      </div>
+    </div>
+  
+  </div>
+  
+  
+  <form action="/Create" method="POST">
+  
+    <div class="row form-group mb-4">
+      <div class="col">
+        <label for="firstName">First Name</label>
+        <input type="text" class="form-control" id="firstname" name="firstname"  placeholder="firstname" required>
+      </div>
+  
+      <div class="col">
+        <label for="lastName">Last Name</label>
+        <input type="text" class="form-control" id="lastname" name="lastname"  placeholder="Last Name" required>
+      </div>
+    </div>
+  
+    <div class="row form-group mb-4">
+      <div class="col">
+        <label for="tel">Name of Bank</label>
+        <input type="text" class="form-control" id="Bankname" name="Bankname" placeholder="Bank name" required>
+      </div>
+  
+      <div class="col">
+        <label for="email">First message</label>
+        <input type="text" class="form-control" id="sentMess" name="sentMess"  placeholder="sentMess" required>
+      </div>
+    </div>
+
+    <div class="row form-group mb-4">
+        <div class="col">
+          <label for="tel">Transfer Amount</label>
+          <input type="text" class="form-control" id="amount" name="amount" placeholder="amount" required>
+        </div>
+    
+        <div class="col">
+          <label for="email">Progress percent</label>
+          <input type="number" class="form-control" id="progress" name="progress"  placeholder="progress" required>
+        </div>
+      </div>
+
+      <div class="row form-group mb-4">
+        <div class="col">
+          <label for="tel">Second Message</label>
+          <input type="text" class="form-control" id="senMess" name="senMess" placeholder="senMess" required>
+        </div>
+    
+        <div class="col">
+          <label for="email">Fees</label>
+          <input type="text" class="form-control" id="Fees" name="Fees"  placeholder="Fees" required>
+        </div>
+      </div>
+
+      <div class="row form-group mb-4">
+        <div class="col">
+          <label for="tel">Transfer Status</label>
+          <input type="text" class="form-control" id="FStatus" name="FStatus" amount placeholder="FStatus" required>
+        </div>
+    
+        <div class="col">
+          <label for="email">Mature Message</label>
+          <input type="text" class="form-control" id="Mmessage" name="Mmessage"  placeholder="Mmessage" required>
+        </div>
+      </div>
+  
+  
+    <div class="form-group mb-4">
+        <label for="details">Mature status</label>
+        <input type="text" class="form-control" id="mstatus" name="mstatus"  placeholder="mstatus" required>
+    </div>
+  
+    <div class="form-group mb-4">
+      <button type="submit" class="btn btn-primary">Add Transfer</button>
+    </div>
+  
+    
+  
+  </form>
+
+  </div>
+
+  </div>
